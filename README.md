@@ -103,9 +103,9 @@ You can also generate wafer maps directly from the terminal using pre-trained we
 
 ```
 wafer/
-├── Automated-Signature-Identification-in-VLSI-Metrology.pptx  # 📊 Project Presentation Slide Deck
-├── report/                                                    # 📄 Project Report Directory
-│   └── README.md                                              # Placeholder & instructions for project report
+├── report and ppt/                                                
+│   └── Automated Signature Identification in VLSI Metrology – Project Report.pdf  
+    └── Automated-Signature-Identification-in-VLSI-Metrology.pptx                                           
 ├── requirements.txt                                           # Python dependency specifications
 ├── .gitignore                                                 # Git ignore rules for caches & large datasets
 ├── sample_visualisation.py                                    # Standalone script to preview wafer maps
@@ -166,37 +166,7 @@ The WM-811K benchmark contains **25,519 expert-labeled wafers** categorized into
   - If you wish to re-run the raw data extraction in [`wafermap_fixed.ipynb`](wafermap_fixed.ipynb), download `LSWMD.pkl` (or `LSWMD.csv`) from [Kaggle WM-811K Wafer Map Dataset](https://www.kaggle.com/datasets/qingyi/wm811k-wafer-map) and place it in the project root.
   - *Note*: Raw datasets exceeding GitHub's 100MB limit (`LSWMD.csv` / `LSWMD.pkl`, ~600MB) are automatically excluded via `.gitignore` to ensure clean and problem-free git pushes.
 
----
 
-## 🛠️ Step-by-Step Instructions: Pushing to GitHub
-
-To push this repository to your GitHub account:
-
-1. **Initialize Git and Stage Files:**
-   ```bash
-   git init
-   git add .
-   ```
-
-2. **Commit Changes:**
-   ```bash
-   git commit -m "Initial commit: Automated VLSI Wafer Signature Identification & Generative Synthesis"
-   ```
-
-3. **Link to Your GitHub Repository:**
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-   ```
-
-4. **Push to Remote:**
-   ```bash
-   git push -u origin main
-   ```
-
-*(If you add your report to `report/` later, simply run `git add report/`, `git commit -m "Add project report"`, and `git push`.)*
-
----
 
 ## 📜 License
 
